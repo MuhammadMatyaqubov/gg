@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oshxona taymerlari</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Kirish qismi -->
+  <header class="hero">
+    <div class="hero__text">
+      <p class="hero__tag">Oziq-ovqat va oshxona</p>
+      <h1>Oshxona taymerlari</h1>
+      <p class="hero__lead">Oshpazga bir nechta jarayon vaqtini bir joyda kuzatishga yordam beradi. Har bir taymer alohida ishlaydi.</p>
+      <a class="btn btn--primary" href="#taymerlar">Taymerlarga o‘tish</a>
+
+      <ol class="steps">
+        <li>Jarayonga nom va soniyalarda davomiylik bering.</li>
+        <li>Har taymerni alohida boshlang.</li>
+        <li>To‘xtating va davom ettiring.</li>
+        <li>Vaqt tugaganda matnli holat chiqadi.</li>
+      </ol>
+    </div>
+
+    <div class="hero__dial" aria-hidden="true">
+      <div class="dial">
+        <span class="dial__hand"></span>
+        <span class="dial__cap"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Afzalliklar -->
+  <section class="perks" aria-label="Afzalliklar">
+    <div class="perks__inner">
+      <article class="perk">
+        <h3>Tez shablonlar</h3>
+        <p>30 soniya, 1, 5 yoki 10 daqiqani bir bosishda tanlang. Soat, daqiqa va soniyani alohida ham kiritish mumkin.</p>
+      </article>
+      <article class="perk">
+        <h3>6 tagacha taymer</h3>
+        <p>Jarayon qo‘shing yoki o‘chiring. Hammasini bir tugma bilan boshlang yoki to‘xtating.</p>
+      </article>
+      <article class="perk">
+        <h3>Ovoz va eslab qolish</h3>
+        <p>Vaqt tugaganda signal eshitiladi. Nomlar va vaqtlar saqlanadi, brauzer tabida qolgan vaqt ko‘rinadi.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Taymerlar -->
+  <main id="taymerlar" class="board">
+    <div class="board__head">
+      <div>
+        <h2>Jarayonlaringiz</h2>
+        <p>Nomni yozing, vaqtni tanlang va boshlang.</p>
+      </div>
+      <div class="toolbar">
+        <button type="button" id="startAll" class="btn btn--primary">Hammasini boshlash</button>
+        <button type="button" id="pauseAll" class="btn btn--ghost">Hammasini to‘xtatish</button>
+        <button type="button" id="addTimer" class="btn btn--ghost">+ Taymer qo‘shish</button>
+        <button type="button" id="soundBtn" class="btn btn--ghost" aria-pressed="true">Ovoz: yoqilgan</button>
+      </div>
+    </div>
+    <div id="timers" class="timers"></div>
+  </main>
+
+  <footer class="foot">Bilet 035 · B daraja</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
